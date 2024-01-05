@@ -2875,6 +2875,16 @@
             "rid": "win"
           }
         }
+      },
+      "EK.Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/EK.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EK.Helper.dll": {}
+        }
       }
     }
   },
@@ -7982,10 +7992,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EK.Helper/1.0.0": {
+      "type": "project",
+      "path": "../EK.Helper/EK.Helper.csproj",
+      "msbuildProject": "../EK.Helper/EK.Helper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EK.Helper >= 1.0.0",
       "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter >= 8.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
@@ -8001,11 +8017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emrul\\Desktop\\YAZILIM\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
+      "projectUniqueName": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
       "projectName": "LibraryApp",
-      "projectPath": "C:\\Users\\emrul\\Desktop\\YAZILIM\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
+      "projectPath": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
       "packagesPath": "C:\\Users\\emrul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emrul\\Desktop\\YAZILIM\\LibraryApp\\LibraryApp\\obj\\",
+      "outputPath": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8026,7 +8042,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\EK.Helper\\EK.Helper.csproj": {
+              "projectPath": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\EK.Helper\\EK.Helper.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -17,39 +17,39 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LibraryApp
 build_property.RootNamespace = LibraryApp
-build_property.ProjectDir = C:\Users\emrul\Desktop\YAZILIM\LibraryApp\LibraryApp\
+build_property.ProjectDir = C:\Users\emrul\OneDrive\Belgeler\GitHub\LibraryApp\LibraryApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\emrul\Desktop\YAZILIM\LibraryApp\LibraryApp
+build_property.MSBuildProjectDirectory = C:\Users\emrul\OneDrive\Belgeler\GitHub\LibraryApp\LibraryApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/emrul/Desktop/YAZILIM/LibraryApp/LibraryApp/Areas/Management/Views/Home/Index.cshtml]
+[C:/Users/emrul/OneDrive/Belgeler/GitHub/LibraryApp/LibraryApp/Areas/Management/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrul/Desktop/YAZILIM/LibraryApp/LibraryApp/Areas/Management/Views/_ViewImports.cshtml]
+[C:/Users/emrul/OneDrive/Belgeler/GitHub/LibraryApp/LibraryApp/Areas/Management/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrul/Desktop/YAZILIM/LibraryApp/LibraryApp/Areas/Management/Views/_ViewStart.cshtml]
+[C:/Users/emrul/OneDrive/Belgeler/GitHub/LibraryApp/LibraryApp/Areas/Management/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrul/Desktop/YAZILIM/LibraryApp/LibraryApp/Views/Home/About.cshtml]
+[C:/Users/emrul/OneDrive/Belgeler/GitHub/LibraryApp/LibraryApp/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrul/Desktop/YAZILIM/LibraryApp/LibraryApp/Views/Home/Index.cshtml]
+[C:/Users/emrul/OneDrive/Belgeler/GitHub/LibraryApp/LibraryApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrul/Desktop/YAZILIM/LibraryApp/LibraryApp/Views/Home/Privacy.cshtml]
+[C:/Users/emrul/OneDrive/Belgeler/GitHub/LibraryApp/LibraryApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrul/Desktop/YAZILIM/LibraryApp/LibraryApp/Areas/Management/Views/Shared/_Layout.cshtml]
+[C:/Users/emrul/OneDrive/Belgeler/GitHub/LibraryApp/LibraryApp/Areas/Management/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-5dykveyh74

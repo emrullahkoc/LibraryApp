@@ -26,4 +26,8 @@
     <Folder Include="Areas\Management\Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EK.Helper\EK.Helper.csproj" />
+  </ItemGroup>
+
 </Project>
