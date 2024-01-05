@@ -11,7 +11,7 @@ namespace EK.Helper.Utils
     internal class MailSender
     {
         public const string SENDERMAIL = "omer.oksuz2004@outlook.com";
-        public const string SENDERPASSWORD = "Omeromur2004";
+        public const string SENDERPASSWORD = "Ommeer";
 
         public static void Send(IEnumerable<string> mailAddresses, string title, string message)
         {
