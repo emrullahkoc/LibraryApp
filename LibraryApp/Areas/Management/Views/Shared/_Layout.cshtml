@@ -1,14 +1,30 @@
 ﻿<!DOCTYPE html>
 <html lang="tr">
+
 <head>
-   <partial name="_Head"/>
+	<partial name="_Head" />
 </head>
+
 <body>
-    <partial name="_Topbar" />
-    <partial name="_Navbar"/>
-    @RenderBody();
-    <partial name="_Footer" />
-    <partial name="_Scripts"/>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!--sidebar-wrapper-->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<partial name="_Sidebar" />
+			<partial name="_Navigation" />
+		</div>
+		<!--end sidebar-wrapper-->
+
+		<partial name="_Header" />
+
+		@RenderBody();
+
+		<partial name="_Mobile" />
+		<partial name="_Footer" />
+	</div>
+	<!-- end wrapper -->
+	<partial name="_Switcher" />
+	<partial name="_Scripts" />
 </body>
 
 </html>
