@@ -10,16 +10,19 @@ namespace EK.Helper.Utils
 {
     internal class MailSender
     {
-        public const string SENDERMAIL = "omer.oksuz2004@outlook.com";
-        public const string SENDERPASSWORD = "Ommeer";
+
+        //Solution sağ tıklayıp "new project" arama kısmına"Class Library" yazıp seçiyoruz.Oluşan klasörde oluşan class siliyoruz.sonrasında "utils" klasörü açıp istediğimiz bi class açıyoruz. Diğer projede kullana bilmek için projeye sağ tıklayıp "Add" ardından "Project Reference" tıklayıp oluşturduğumuz ve kullanmak istediğimiz kütüphaneyi seçip onaylıyoruz.
+
+        public const string SENDERMAIL = "omer.oksuz2004@outlook.com"; //Mailin yollanacağı mail adresi
+        public const string SENDERPASSWORD = "Ommeer"; //Mailin yollanacağı mailin şifresi
 
         public static void Send(IEnumerable<string> mailAddresses, string title, string message)
         {
             SmtpClient client = new SmtpClient();
-            client.Port = 587;
-            client.Host = "smtp-mail.outlook.com";
+            client.Port = 587; //Outlook ayarları
+            client.Host = "smtp-mail.outlook.com"; //Outlook ayarları
             client.EnableSsl = true;
-            client.Timeout = 50000;
+            client.Timeout = 50000; //Mailin ne kadar süre içinde gitmesi gerektiği
 
             string senderMail = SENDERMAIL;
             string senderPassword = SENDERPASSWORD;
@@ -27,16 +30,16 @@ namespace EK.Helper.Utils
 
             MailMessage mail = new MailMessage();
 
-            mail.From = new MailAddress(senderMail, "EMRULLAH KOÇ");
+            mail.From = new MailAddress(senderMail, "EMRULLAH KOÇ"); // Gönderici Mail , Gönderen Adı
 
-            foreach (string mailAddress in mailAddresses)
+            foreach (string mailAddress in mailAddresses) //Listedeki Mail Adreslerini Döner
             {
                 mail.To.Add(mailAddress);
             }
 
-            mail.Subject = title;
-            mail.Body = message;
-            mail.IsBodyHtml = true;
+            mail.Subject = title; //Mesaj Başlığı
+            mail.Body = message; //Mesaj İçeriği
+            mail.IsBodyHtml = true; //Mesajın Html formatında olduğunu belirtir.
 
             client.Send(mail);
         }
