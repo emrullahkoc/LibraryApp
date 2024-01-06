@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace EK.Helper.Utils
 {
-    internal class MailSender
-    {
+	public static class MailSender
+	{
 
-        //Solution sağ tıklayıp "new project" arama kısmına"Class Library" yazıp seçiyoruz.Oluşan klasörde oluşan class siliyoruz.sonrasında "utils" klasörü açıp istediğimiz bi class açıyoruz. Diğer projede kullana bilmek için projeye sağ tıklayıp "Add" ardından "Project Reference" tıklayıp oluşturduğumuz ve kullanmak istediğimiz kütüphaneyi seçip onaylıyoruz.
+		//Solution sağ tıklayıp "new project" arama kısmına"Class Library" yazıp seçiyoruz.Oluşan klasörde oluşan class siliyoruz.sonrasında "utils" klasörü açıp istediğimiz bi class açıyoruz. Diğer projede kullana bilmek için projeye sağ tıklayıp "Add" ardından "Project Reference" tıklayıp oluşturduğumuz ve kullanmak istediğimiz kütüphaneyi seçip onaylıyoruz.
 
-        public const string SENDERMAIL = "omer.oksuz2004@outlook.com"; //Mailin yollanacağı mail adresi
-        public const string SENDERPASSWORD = "Ommeer"; //Mailin yollanacağı mailin şifresi
+		public const string SENDERMAIL = "emrullahkocccc@outlook.com"; //Mailin yollanacağı mail adresi
+        public const string SENDERPASSWORD = "dw30C6f-03IzrOpBj{9wdCYq&!i6.z~VQ2PuBED{Z}PRkrp^wz"; //Mailin yollanacağı mailin şifresi
 
         public static void Send(IEnumerable<string> mailAddresses, string title, string message)
         {
@@ -43,5 +43,5 @@ namespace EK.Helper.Utils
 
             client.Send(mail);
         }
-    }
+	}
 }

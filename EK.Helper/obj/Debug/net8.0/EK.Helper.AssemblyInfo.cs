@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EK.Helper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0495c5b9b0fb12c80ec0ebe79ac563393e96e751")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fcdcda7a76ca56cf94ceb93f4719c59db152395")]
 [assembly: System.Reflection.AssemblyProductAttribute("EK.Helper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EK.Helper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

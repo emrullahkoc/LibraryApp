@@ -510,3 +510,4 @@ C:\Users\emrul\OneDrive\Belgeler\GitHub\LibraryApp\LibraryApp\obj\Debug\net8.0\r
 C:\Users\emrul\OneDrive\Belgeler\GitHub\LibraryApp\LibraryApp\bin\Debug\net8.0\EK.Helper.dll
 C:\Users\emrul\OneDrive\Belgeler\GitHub\LibraryApp\LibraryApp\bin\Debug\net8.0\EK.Helper.pdb
 C:\Users\emrul\OneDrive\Belgeler\GitHub\LibraryApp\LibraryApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\emrul\OneDrive\Belgeler\GitHub\LibraryApp\LibraryApp\bin\Debug\net8.0\Areas\Management\wwwarearoot\ckeditor\samples\toolbarconfigurator\font\config.json

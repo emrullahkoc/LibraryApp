@@ -1,0 +1,38 @@
+﻿@model MainPage
+
+<div class="card radius-15">
+    <div class="card-body">
+        <div class="card-title">
+            <h4 class="mb-0">ANA SAYFA DÜZENLE</h4>
+        </div>
+        <hr>
+        <div class="table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Başlık</th>
+                        <th scope="col">Açıklama</th>
+                        <th>Güncelleme Tarihi</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">@Model.Id</th>
+                        <td>@Model.Title</td>
+                        <td>@Html.Raw(Model.Description)</td>
+                        <td>@Model.CreatedDate.ToString("dd MMMM yyyy")</td>
+                        <td>
+                            <a class="btn btn-success d-flex justify-content-center" href="/Management/MainPage/Edit/@Model.Id">Düzenle</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img class="img-fluid" src="@Model.ImageUrl" />
+            }
+        </div>
+    </div>
+</div>

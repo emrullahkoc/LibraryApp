@@ -2,28 +2,39 @@
 <html lang="tr">
 
 <head>
-	<partial name="_Head" />
+    <partial name="_Head" />
 </head>
 
 <body>
-	<!-- wrapper -->
-	<div class="wrapper">
-		<!--sidebar-wrapper-->
-		<div class="sidebar-wrapper" data-simplebar="true">
-			<partial name="_Sidebar" />
-			<partial name="_Navigation" />
-		</div>
-		<!--end sidebar-wrapper-->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!--sidebar-wrapper-->
+        <div class="sidebar-wrapper" data-simplebar="true">
+            <partial name="_Sidebar" />
+            <partial name="_Navigation" />
+        </div>
+        <!--end sidebar-wrapper-->
 
-		<partial name="_Header" />
+        <partial name="_Header" />
 
-		@RenderBody();
+        <!--page-wrapper-->
+        <div class="page-wrapper">
+            <!--page-content-wrapper-->
+            <div class="page-content-wrapper">
+                <div class="page-content">
 
-		<partial name="_Mobile" />
-		<partial name="_Footer" />
-	</div>
-	<!-- end wrapper -->
-	<partial name="_Scripts" />
+                    @RenderBody()
+
+                </div>
+                <!--end page-content-wrapper-->
+            </div>
+            <!--end page-wrapper-->
+
+            <partial name="_Mobile" />
+            <partial name="_Footer" />
+        </div>
+        <!-- end wrapper -->
+        <partial name="_Scripts" />
 </body>
 
 </html>

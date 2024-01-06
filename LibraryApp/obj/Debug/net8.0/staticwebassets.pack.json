@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\LibraryApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010629.jpeg",
+      "PackagePath": "staticwebassets\\ImageUpload\\hero2024010629.jpeg"
+    },
+    {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },

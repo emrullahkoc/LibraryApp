@@ -24,6 +24,7 @@
   <ItemGroup>
     <Folder Include="Areas\Management\Data\" />
     <Folder Include="Areas\Management\Models\" />
+    <Folder Include="wwwroot\ImageUpload\" />
   </ItemGroup>
 
   <ItemGroup>
