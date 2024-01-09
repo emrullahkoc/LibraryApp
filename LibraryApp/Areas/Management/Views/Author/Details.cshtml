@@ -12,9 +12,9 @@
                         <div class="ms-md-4 flex-grow-1">
                             <div class="d-flex align-items-center mb-1">
                                 <h4 class="mb-0">@Model.FullName</h4>
-                                <p class="mb-0 ms-auto">@Model.CreatedDate</p>
+                                <p class="mb-0 ms-auto">SON GÜNCELLEME TARİHİ <br /> @Model.CreatedDate</p>
                             </div>
-                            <button href="/Management/Author/Edit/@Model.Id" type="button" class="btn btn-primary">Düzenle</button>
+                            <a href="/Management/Author/Edit/@Model.Id" type="button" class="btn btn-primary">Düzenle</a>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                             </tr>
                             <tr>
                                 <th>Hakkında:</th>
-                                <td>@Model.Description</td>
+                                <td>@Html.Raw(Model.Description)</td>
                             </tr>
                         </tbody>
                     </table>

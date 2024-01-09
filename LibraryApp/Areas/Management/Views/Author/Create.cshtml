@@ -19,11 +19,8 @@
             <span class="text-danger" asp-validation-for="BirthDate"></span><!--Hata Mesajı-->
 
             <input class="form-control mb-3" type="date" placeholder="Ölüm Tarihi" asp-for="DeathDate">
-
-            <div class="d-flex justify-content-end">
-                <a href="/Management/Author/Index" class="btn btn-warning">İptal Et</a>
-                <input type="submit" value="Kaydet" class="btn btn-primary" />
-            </div>
+            <input type="submit" value="Kaydet" class="btn btn-primary" />
+            <a href="/Management/Author/Index" class="btn btn-warning">İptal Et</a>
         </form>
     </div>
 </div>

@@ -16,7 +16,9 @@ namespace LibraryApp.Areas.Management.Controllers
         }
         public IActionResult Index()
         {
-            var model = db.Authors.ToList();
+            IEnumerable<Author> model = db.Authors
+                .Where(c => c.Status == true)
+                .ToList();
             return View(model);
         }
         public IActionResult Details(int id)
@@ -42,7 +44,14 @@ namespace LibraryApp.Areas.Management.Controllers
                 {
                     model.ImageUrl = await ImageUploader.UploadImageAsync(_hostEnvironment, img);
                 }
-
+                if (model.DeathDate == null)
+                {
+                    model.DeathDate = null;
+                }
+                else
+                {
+                    model.DeathDate = model.DeathDate;
+                }
                 model.Status = true;
                 model.CreatedDate = DateTime.Now;
 				db.SaveChanges();
