@@ -73,7 +73,8 @@ namespace LibraryApp.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("FullName")
                         .IsRequired()
@@ -283,11 +284,8 @@ namespace LibraryApp.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("ImageUrl")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -355,7 +353,7 @@ namespace LibraryApp.Migrations
             modelBuilder.Entity("LibraryApp.Models.Favorite", b =>
                 {
                     b.HasOne("LibraryApp.Models.Book", "Book")
-                        .WithMany("Favorites")
+                        .WithMany()
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -374,11 +372,6 @@ namespace LibraryApp.Migrations
             modelBuilder.Entity("LibraryApp.Models.Author", b =>
                 {
                     b.Navigation("Books");
-                });
-
-            modelBuilder.Entity("LibraryApp.Models.Book", b =>
-                {
-                    b.Navigation("Favorites");
                 });
 
             modelBuilder.Entity("LibraryApp.Models.Category", b =>

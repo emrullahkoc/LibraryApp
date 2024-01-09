@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+B3/bnpARAwOExrQW/53BsbMSPhWVUi2IjoJx7WlLtY=",
+  "Hash": "QJXyw92N96IblT/b1yyDnH5gaGrxIib3k/+wmlaEx1Q=",
   "Source": "LibraryApp",
   "BasePath": "_content/LibraryApp",
   "Mode": "Default",
@@ -131,12 +131,12 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010629.jpeg",
+      "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010636.jpeg",
       "SourceId": "LibraryApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\",
       "BasePath": "_content/LibraryApp",
-      "RelativePath": "ImageUpload/hero2024010629.jpeg",
+      "RelativePath": "ImageUpload/hero2024010636.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +147,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ImageUpload\\hero2024010629.jpeg"
+      "OriginalItemSpec": "wwwroot\\ImageUpload\\hero2024010636.jpeg"
     },
     {
       "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\img\\about.jpg",

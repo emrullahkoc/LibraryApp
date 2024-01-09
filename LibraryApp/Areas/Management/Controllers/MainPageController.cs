@@ -36,8 +36,8 @@ namespace LibraryApp.Areas.Management.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				MainPage? editModel = db.MainPages.Find(model.Id);
-				if (editModel == null)
+                var editModel = db.MainPages.Find(model.Id);
+                if (editModel == null)
 				{
 					return Redirect("/Management/MainPage/Index");
 				}
@@ -46,7 +46,6 @@ namespace LibraryApp.Areas.Management.Controllers
 					await ImageUploader.DeleteImageAsync(_hostEnvironment, editModel.ImageUrl);
 					editModel.ImageUrl = await ImageUploader.UploadImageAsync(_hostEnvironment, img);
 				}
-                model.Status = true;
                 model.CreatedDate = DateTime.Now;
 				editModel.Title = model.Title.ToUpper();
 				editModel.Description = model.Description;

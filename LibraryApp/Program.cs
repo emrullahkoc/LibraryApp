@@ -29,7 +29,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapAreaControllerRoute(
-    name: "ManagementPanel",
+    name: "Management",
     areaName: "Management",
     pattern: "Management/{controller=Home}/{action=Index}/{id?}");
 

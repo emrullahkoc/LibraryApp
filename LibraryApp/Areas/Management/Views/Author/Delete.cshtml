@@ -1,0 +1,48 @@
+﻿@model Author
+
+<div class="user-profile-page">
+    <div class="card radius-15">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-lg-7 border-right">
+                    <div class="d-md-flex align-items-center">
+                        <div class="mb-md-0 mb-3">
+                            <img src="@Model.ImageUrl" class="rounded-circle shadow" width="130" height="130" alt="">
+                        </div>
+                        <div class="ms-md-4 flex-grow-1">
+                            <div class="d-flex align-items-center mb-1">
+                                <h4 class="mb-0">@Model.FullName</h4>
+                                <p class="mb-0 ms-auto">@Model.CreatedDate</p>
+                            </div>
+                            <button href="/Management/Author/Edit/@Model.Id" type="button" class="btn btn-primary">Düzenle</button>
+                            <form action="/Management/Author/Delete/@Model.Id" method="post">
+                                <input type="submit" value="Sil" class="btn btn-danger" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <table class="table table-sm table-borderless mt-md-0 mt-3">
+                        <tbody>
+                            <tr>
+                                <th>Doğum Tarihi:</th>
+                                <td>
+                                    @Model.BirthDate <span class="badge badge-success">available</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Ölüm Tarihi:</th>
+                                <td>@Model.DeathDate</td>
+                            </tr>
+                            <tr>
+                                <th>Hakkında:</th>
+                                <td>@Model.Description</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+    </div>
+</div>

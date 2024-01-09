@@ -4,10 +4,9 @@
     <div class="card-body">
         <form method="post" enctype="multipart/form-data">
 
-            <input asp-for="Id" type="hidden" />
+            <input type="hidden" asp-for="Id" />
 
             <input class="form-control mb-3" type="text" placeholder="Başlık" asp-for="Title">
-
             <span class="text-danger" asp-validation-for="Title"></span>
 
             <textarea class="form-control mb-3 ckeditor" type="text" placeholder="Açıklama" asp-for="Description" rows="4"></textarea>
