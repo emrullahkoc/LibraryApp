@@ -32,7 +32,7 @@ namespace LibraryApp.Areas.Management.Controllers
 			return View(model);
 		}
 		[HttpPost]
-		public async Task<IActionResult> Edit(MainPage model, IFormFile img)
+		public async Task<IActionResult> Edit(MainPage model, IFormFile? img)
 		{
 			if (ModelState.IsValid)
 			{

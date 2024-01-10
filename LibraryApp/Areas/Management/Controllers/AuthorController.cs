@@ -2,6 +2,7 @@
 using LibraryApp.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
+using System.Diagnostics;
 
 namespace LibraryApp.Areas.Management.Controllers
 {
@@ -44,33 +45,26 @@ namespace LibraryApp.Areas.Management.Controllers
                 {
                     model.ImageUrl = await ImageUploader.UploadImageAsync(_hostEnvironment, img);
                 }
-                if (model.DeathDate == null)
-                {
-                    model.DeathDate = null;
-                }
-                else
-                {
-                    model.DeathDate = model.DeathDate;
-                }
                 model.Status = true;
                 model.CreatedDate = DateTime.Now;
-				db.SaveChanges();
-                return Redirect("Management/Author/Index");
+                db.Authors.Add(model);
+                db.SaveChanges();
+                return Redirect("/Management/Author/Index");
             }
             return View(model);
         }
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            Author? model = (Author)db.Authors.Find(id);
+            Author? model = db.Authors.Find(id);
             if (model == null)
             {
-                return Redirect("Management/Author/Index");
+                return Redirect("/Management/Author/Index");
             }
             return View(model);
         }
         [HttpPost]
-        public async Task<IActionResult> Edit(Author model, IFormFile img)
+        public async Task<IActionResult> Edit(Author model, IFormFile? img)
         {
             if (ModelState.IsValid)
             {
@@ -83,21 +77,14 @@ namespace LibraryApp.Areas.Management.Controllers
                 {
                     await ImageUploader.DeleteImageAsync(_hostEnvironment, editmodel.ImageUrl);
                     editmodel.ImageUrl = await ImageUploader.UploadImageAsync(_hostEnvironment, img);
-
                 }
                 editmodel.FullName = model.FullName;
                 editmodel.Description = model.Description;
-                editmodel.CreatedDate = DateTime.Now;
                 editmodel.BirthDate = model.BirthDate;
-                if (model.DeathDate == null)
-                {
-					editmodel.DeathDate = null;
-				}
-                else
-                {
-					editmodel.DeathDate = model.DeathDate;
-				}
-				db.SaveChanges();
+                editmodel.DeathDate = model.DeathDate;
+                editmodel.Status = true;
+                editmodel.CreatedDate = DateTime.Now;
+				await db.SaveChangesAsync();
                 return Redirect("/Management/Author/Index");
             }
             return View(model);

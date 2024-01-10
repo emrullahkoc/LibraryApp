@@ -284,7 +284,6 @@ namespace LibraryApp.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")

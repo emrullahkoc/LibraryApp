@@ -13,8 +13,7 @@ namespace LibraryApp.Models
         [MinLength(5, ErrorMessage = "Başlık alanı en az 5 karakter içermeli.")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Lütfen geçerli bir resim seçiniz.")]
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
 
         [Required(ErrorMessage = "Açıklama alanını doldurun.")]
         [StringLength(250, ErrorMessage = "Açıklama en fazla 250 karakter içermeli")]

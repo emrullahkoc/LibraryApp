@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\LibraryApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010912.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010912.jpg"
+    },
+    {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010913.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010913.jpg"
     },
@@ -17,10 +21,6 @@
       "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010920.jpg"
     },
     {
-      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010940.jpg",
-      "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010940.jpg"
-    },
-    {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010954.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010954.jpg"
     },
@@ -29,8 +29,16 @@
       "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010957.jpg"
     },
     {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\dogumGunu2024010921.png",
+      "PackagePath": "staticwebassets\\ImageUpload\\dogumGunu2024010921.png"
+    },
+    {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010636.jpeg",
       "PackagePath": "staticwebassets\\ImageUpload\\hero2024010636.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010930.jpeg",
+      "PackagePath": "staticwebassets\\ImageUpload\\hero2024010930.jpeg"
     },
     {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\css\\bootstrap.min.css",

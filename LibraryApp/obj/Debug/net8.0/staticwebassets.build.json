@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mwrNv3yPAL1imfBnP/b1+YfDtvgeKX187nvQ0ZIhwZE=",
+  "Hash": "uZCm9DDClFuLl5oPf0xk/do4OytyiZppW0mvFTSuYTs=",
   "Source": "LibraryApp",
   "BasePath": "_content/LibraryApp",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
+      "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010912.jpg",
+      "SourceId": "LibraryApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp",
+      "RelativePath": "ImageUpload/220px-1999-Saramago_a_Siena2024010912.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010912.jpg"
+    },
+    {
       "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010913.jpg",
       "SourceId": "LibraryApp",
       "SourceType": "Discovered",
@@ -188,25 +207,6 @@
       "OriginalItemSpec": "wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010920.jpg"
     },
     {
-      "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010940.jpg",
-      "SourceId": "LibraryApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp",
-      "RelativePath": "ImageUpload/220px-1999-Saramago_a_Siena2024010940.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010940.jpg"
-    },
-    {
       "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010954.jpg",
       "SourceId": "LibraryApp",
       "SourceType": "Discovered",
@@ -245,6 +245,25 @@
       "OriginalItemSpec": "wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010957.jpg"
     },
     {
+      "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\dogumGunu2024010921.png",
+      "SourceId": "LibraryApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp",
+      "RelativePath": "ImageUpload/dogumGunu2024010921.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImageUpload\\dogumGunu2024010921.png"
+    },
+    {
       "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010636.jpeg",
       "SourceId": "LibraryApp",
       "SourceType": "Discovered",
@@ -262,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImageUpload\\hero2024010636.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010930.jpeg",
+      "SourceId": "LibraryApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp",
+      "RelativePath": "ImageUpload/hero2024010930.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImageUpload\\hero2024010930.jpeg"
     },
     {
       "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\img\\about.jpg",
