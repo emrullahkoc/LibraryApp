@@ -13,6 +13,6 @@ namespace LibraryApp.Models {
         [Required]
         public int BookId { get; set; }
         [ForeignKey("BookId")]
-        public virtual Book Book { get; set; }
+        public virtual Book? Book { get; set; }
     }
 }

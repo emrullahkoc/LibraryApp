@@ -11,12 +11,12 @@ namespace LibraryApp.Models
         [Required]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
-        public virtual Category Category { get; set; }
+        public virtual Category? Category { get; set; }
 
         [Required]
         public int AuthorId { get; set; }
         [ForeignKey("AuthorId")]
-        public virtual Author Author { get; set; }
+        public virtual Author? Author { get; set; }
 
         [Required, StringLength(32)]
         public string Name { get; set; }
@@ -31,5 +31,6 @@ namespace LibraryApp.Models
         [Required]
         public bool Status { get; set; }
         public DateTime CreatedDate { get; set; }
+        public virtual ICollection<Favorite> Favorites { get; set; }
     }
 }
