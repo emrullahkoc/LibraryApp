@@ -10,11 +10,15 @@ namespace LibraryApp.Models
         }
         [Key]
         public int Id { get; set; }
-        [Required, StringLength(32)]
+        [Required(ErrorMessage = "Kategori alanını doldurun.")]
+        [StringLength(100, ErrorMessage = "Kategori alanını en fazla 100 karakter içermeli")]
+        [MinLength(5, ErrorMessage = "Kategori alanını alanı en az 3 karakter içermeli.")]
         public string Name { get; set; }
         [StringLength(128)]
         public string? ImageURL { get; set; }
-        [Required, StringLength(256)]
+        [Required(ErrorMessage = "Açıklama alanını doldurun.")]
+        [StringLength(500, ErrorMessage = "Açıklama alanını en fazla 500 karakter içermeli")]
+        [MinLength(15, ErrorMessage = "Açıklama alanını alanı en az 15 karakter içermeli.")]
         public string Description { get; set; }
         [Required]
         public bool Status { get; set; }

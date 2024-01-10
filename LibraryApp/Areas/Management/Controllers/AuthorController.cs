@@ -37,7 +37,7 @@ namespace LibraryApp.Areas.Management.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Author model, IFormFile img)
+        public async Task<IActionResult> Create(Author model, IFormFile? img)
         {
             if (ModelState.IsValid)
             {

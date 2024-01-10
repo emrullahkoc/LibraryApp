@@ -1,0 +1,21 @@
+﻿@model Category
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+
+            <input class="form-control mb-3" type="text" placeholder="Kategori Adı" asp-for="Name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+
+            <textarea class="form-control mb-3 ckeditor" type="text" placeholder="Hakkında" asp-for="Description" rows="4"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span> <!--Hata Mesajı-->
+
+            <br />
+            <input class="form-control" type="file" name="img" id="img" accept="image/*" />
+            <span class="text-danger" asp-validation-for="ImageURL"></span> <!--Hata Mesajı-->
+            <br />
+            <input type="submit" value="Kaydet" class="btn btn-primary" />
+            <a href="/Management/Category/Index" class="btn btn-warning">İptal Et</a>
+        </form>
+    </div>
+</div>
