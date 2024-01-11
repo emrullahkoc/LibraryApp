@@ -13,13 +13,28 @@
             <input class="form-control mb-3" type="text" placeholder="Barkod" asp-for="Barcode">
             <span class="text-danger" asp-validation-for="Barcode"></span>
 
-            <label>Kategoriler</label>
-            <select asp-for="CategoryId" asp-items="@ViewBag.CategoryId" class="form-control">
-            </select>
 
-            <label>Yazarlar</label>
-            <select asp-for="AuthorId" asp-items="@ViewBag.AuthorId" class="form-control">
-            </select>
+            <div class="row">
+                <label>Kategoriler</label>
+                <div class="col-md-11">
+                    <select asp-for="CategoryId" asp-items="@ViewBag.CategoryId" class="form-control">
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <a href="/Management/Category/Create" class="btn btn-primary">Kategori Ekle</a>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <label>Yazarlar</label>
+                <div class="col-md-11">
+                    <select asp-for="AuthorId" asp-items="@ViewBag.AuthorId" class="form-control">
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <a href="/Management/Author/Create" class="btn btn-primary">Yazar Ekle</a>
+                </div>
+            </div>
             <br />
             <textarea class="form-control mb-3 ckeditor" type="text" placeholder="Özet" asp-for="Brief" rows="4"></textarea>
             <span class="text-danger" asp-validation-for="Brief"></span> <!--Hata Mesajı-->

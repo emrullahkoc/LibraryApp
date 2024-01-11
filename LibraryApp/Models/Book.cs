@@ -1,11 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace LibraryApp.Models
 {
-    public class Book
+	public class Book
     {
-        [Key]
+		public Book()
+		{
+			Favorites = new HashSet<Favorite>();
+		}
+		[Key]
         public int Id { get; set; }
 
         [Required]

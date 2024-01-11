@@ -3,6 +3,7 @@ using LibraryApp.Models;
 using LibraryApp.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryApp.Areas.Management.Controllers
 {
@@ -20,7 +21,7 @@ namespace LibraryApp.Areas.Management.Controllers
 
         public IActionResult Index()
         {
-            var model = db.Books.Where(c => c.Status == true).OrderBy(x => x.CreatedDate).ToList();
+            var model = db.Books.Where(c => c.Status == true).OrderBy(x => x.CreatedDate).Include("Author").Include("Category").ToList();
 			return View(model);
         }
         public IActionResult Details(int id)
