@@ -26,6 +26,8 @@ namespace LibraryApp.Models
         public int PageCount { get; set; }
         [Required, StringLength(32)]
         public string Barcode { get; set; }
+        [StringLength(128)]
+        public string? ImageUrl { get; set; }
         [Required]
         public DateTime PublishDate { get; set; }
         [Required]

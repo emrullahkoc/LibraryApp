@@ -40,9 +40,7 @@ namespace LibraryApp.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Favorite>()
-                .HasKey(x => new { x.BookId, x.UserId });
-
+            modelBuilder.Entity<Favorite>().HasKey(x => new { x.BookId, x.UserId }); //Çoka Çok İlişkiyi Kuruyoruz
             base.OnModelCreating(modelBuilder);
         }
     }
