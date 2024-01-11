@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\LibraryApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\200px-Peyami_Safa_portre2024011143.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\200px-Peyami_Safa_portre2024011143.jpg"
+    },
+    {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-1999-Saramago_a_Siena2024010912.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010912.jpg"
     },
@@ -29,6 +33,26 @@
       "PackagePath": "staticwebassets\\ImageUpload\\220px-1999-Saramago_a_Siena2024010957.jpg"
     },
     {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-Tosa_Mitsuoki—Portrait_of_Murasaki_Shikibu2024011131.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\220px-Tosa_Mitsuoki—Portrait_of_Murasaki_Shikibu2024011131.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\220px-Ömer_Seyfettin2024011152.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\220px-Ömer_Seyfettin2024011152.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\Da_Vinci_Vitruve_Luc_Viatour2024011111.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\Da_Vinci_Vitruve_Luc_Viatour2024011111.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\Halide_Edib_Adıvar2024011157.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\Halide_Edib_Adıvar2024011157.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\dedektif-dergi-polisiye-kurgu-ve-katil-kim-gencoy-sümer2024011108.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\dedektif-dergi-polisiye-kurgu-ve-katil-kim-gencoy-sümer2024011108.jpg"
+    },
+    {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\dogumGunu2024010921.png",
       "PackagePath": "staticwebassets\\ImageUpload\\dogumGunu2024010921.png"
     },
@@ -39,6 +63,10 @@
     {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\hero2024010930.jpeg",
       "PackagePath": "staticwebassets\\ImageUpload\\hero2024010930.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\scio-ve-psikoloji2024011153.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\scio-ve-psikoloji2024011153.jpg"
     },
     {
       "Id": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\css\\bootstrap.min.css",

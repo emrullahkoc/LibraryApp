@@ -32,10 +32,12 @@ namespace LibraryApp.Areas.Management.Controllers
             }
             return View(model);
         }
-        public IActionResult Create()
+
+		[HttpGet]
+		public IActionResult Create()
         {
-			ViewBag.CategoryId = new SelectList(db.Categories, "Id", "Name", null);
-			ViewBag.AuthorId = new SelectList(db.Authors, "Id", "Name", null);
+			ViewBag.CategoryId = new SelectList(db.Categories.Where(c => c.Status == true), "Id", "Name", null);
+			ViewBag.AuthorId = new SelectList(db.Authors.Where(c => c.Status == true), "Id", "FullName", null);
 			return View();
         }
 
@@ -51,13 +53,14 @@ namespace LibraryApp.Areas.Management.Controllers
                 model.CreatedDate = DateTime.Now;
                 model.PublishDate = DateTime.Now;
                 model.Status = true;
-                db.Books.Add(model);
+				
+				db.Books.Add(model);
                 db.SaveChanges();
                 return Redirect("/Management/Book/Index");
-            };
-			ViewBag.CategoryId = new SelectList(db.Categories, "Id", "Name"
+            }
+			ViewBag.CategoryId = new SelectList(db.Categories.Where(c => c.Status == true), "Id", "Name"
 				, model.CategoryId);
-			ViewBag.AuthorId = new SelectList(db.Authors, "Id", "FullName"
+			ViewBag.AuthorId = new SelectList(db.Authors.Where(c => c.Status == true), "Id", "FullName"
 				, model.AuthorId);
 			return View(model);
         }

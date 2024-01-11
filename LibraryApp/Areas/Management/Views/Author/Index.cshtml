@@ -10,21 +10,24 @@
 			<table class="table mb-0">
 				<thead>
 					<tr>
-						<th scope="col">Id</th>
+						<th scope="col">Sıra No</th>
+						<th scope="col">Fotoğraf</th>
 						<th scope="col">İsim Soyisim</th>
-						<th scope="col">Resim</th>
 						<th scope="col">Doğum Tarihi</th>
 						<th scope="col">Güncelleme Tarihi</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
+					@{
+						int rowNumber = 1;
+					}
 					@foreach (var item in Model)
 					{
 						<tr>
-							<th scope="row">@item.Id</th>
-							<td>@item.FullName</td>
+							<th scope="row">@rowNumber</th>
 							<td><img src="@item.ImageUrl" width="75px" /></td>
+							<td>@item.FullName</td>
 							<td>@item.BirthDate.ToString("dd MMMM yyyy")</td>
 							<td>@item.CreatedDate.ToString("dd MMMM yyyy")</td>
 							<td>
@@ -38,6 +41,7 @@
 								   href="/Management/Author/Delete/@item.Id">Sil</a>
 							</td>
 						</tr>
+						rowNumber++;
 					}
 				</tbody>
 			</table>

@@ -10,7 +10,7 @@
 			<table class="table mb-0">
 				<thead>
 					<tr>
-						<th scope="col">Id</th>
+						<th scope="col">Sıra No</th>
 						<th scope="col">Kategori Adı</th>
 						<th scope="col">Resim</th>
 						<th scope="col">Güncelleme Tarihi</th>
@@ -18,10 +18,13 @@
 					</tr>
 				</thead>
 				<tbody>
+					@{
+						int rowNumber = 1;
+					}
 					@foreach (var item in Model)
 					{
 						<tr>
-							<th scope="row">@item.Id</th>
+							<th scope="row">@rowNumber</th>
 							<td>@item.Name</td>
 							<td><img src="@item.ImageURL" width="75px" /></td>
 							<td>@item.CreatedDate.ToString("dd MMMM yyyy")</td>
@@ -36,6 +39,7 @@
 								   href="/Management/Category/Delete/@item.Id">Sil</a>
 							</td>
 						</tr>
+						rowNumber++;
 					}
 				</tbody>
 			</table>

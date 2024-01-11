@@ -13,17 +13,22 @@
             <input class="form-control mb-3" type="text" placeholder="Barkod" asp-for="Barcode">
             <span class="text-danger" asp-validation-for="Barcode"></span>
 
+            <label>Kategoriler</label>
             <select asp-for="CategoryId" asp-items="@ViewBag.CategoryId" class="form-control">
             </select>
 
+            <label>Yazarlar</label>
             <select asp-for="AuthorId" asp-items="@ViewBag.AuthorId" class="form-control">
             </select>
-
+            <br />
             <textarea class="form-control mb-3 ckeditor" type="text" placeholder="Özet" asp-for="Brief" rows="4"></textarea>
             <span class="text-danger" asp-validation-for="Brief"></span> <!--Hata Mesajı-->
             <br />
+            <input class="form-control" type="file" name="img" id="img" accept="image/*" />
+            <span class="text-danger" asp-validation-for="ImageUrl"></span> <!--Hata Mesajı-->
+            <br />
             <input type="submit" value="Kaydet" class="btn btn-primary" />
-            <a href="/Management/Author/Index" class="btn btn-warning">İptal Et</a>
+            <a href="/Management/Book/Index" class="btn btn-warning">İptal Et</a>
         </form>
     </div>
 </div>
