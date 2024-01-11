@@ -26,13 +26,13 @@ namespace LibraryApp.Areas.Management.Controllers
 		}
 		public IActionResult Details(int id)
 		{
-            var model = db.Books.Include("Author").Include("Category")
-                .FirstOrDefault(x => x.Id == id);
-            if (model == null)
+			var model = db.Books.Include("Author").Include("Category")
+				.FirstOrDefault(x => x.Id == id);
+			if (model == null)
 			{
 				return Redirect("/Management/Book/Index");
 			}
-            return View(model);
+			return View(model);
 		}
 
 		[HttpGet]

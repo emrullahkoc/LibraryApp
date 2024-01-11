@@ -3,6 +3,7 @@
 
 <head>
     <partial name="_Head" />
+    @RenderSection("CssSection", required: false)<!-- Silme Css -->
 </head>
 
 <body>
@@ -35,6 +36,8 @@
         </div>
         <!-- end wrapper -->
         <partial name="_Scripts" />
+        @RenderSection("ScriptSection", required: false)<!-- Silme js -->
+
 </body>
 
 </html>
