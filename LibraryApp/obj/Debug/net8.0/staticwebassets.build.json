@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "05m1Rp60ML+nco1gnEmsn91MRdTpPo2U+cfFrMTMThg=",
+  "Hash": "FqQNMTZsRm9kfpmSOkDhu1a/TQ/loKipguVNjx2RB8s=",
   "Source": "LibraryApp",
   "BasePath": "_content/LibraryApp",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImageUpload\\0000000105599-12024011109.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\0002097504001-12024011151.jpg",
+      "SourceId": "LibraryApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp",
+      "RelativePath": "ImageUpload/0002097504001-12024011151.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImageUpload\\0002097504001-12024011151.jpg"
     },
     {
       "Identity": "C:\\Users\\emrul\\OneDrive\\Belgeler\\GitHub\\LibraryApp\\LibraryApp\\wwwroot\\ImageUpload\\200px-Peyami_Safa_portre2024011143.jpg",

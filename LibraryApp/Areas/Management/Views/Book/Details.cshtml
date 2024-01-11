@@ -1,0 +1,52 @@
+﻿@model Book
+
+<div class="user-profile-page">
+    <div class="card radius-15">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-lg-7 border-right">
+                    <div class="d-md-flex align-items-center">
+                        <div class="mb-md-0 mb-3">
+                            <img src="@Model.ImageUrl" class="img-thumbnail shadow" width="200"  alt="">
+                        </div>
+                        <div class="ms-md-4 flex-grow-1">
+                            <div class="d-flex align-items-center mb-1">
+                                <h4 class="mb-0">@Model.Name</h4>
+                                <p class="mb-0 ms-auto">EKLENME TARİHİ <br /> @Model.CreatedDate</p><br />
+                                <p class="mb-0 ms-auto">SON GÜNCELLEME TARİHİ <br /> @Model.PublishDate</p>
+                            </div>
+                            <a href="/Management/Book/Edit/@Model.Id" type="button" class="btn btn-primary">Düzenle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <table class="table table-sm table-borderless mt-md-0 mt-3">
+                        <tbody>
+                            <tr>
+                                <th>Sayfa Sayısı:</th>
+                                <td>@Model.PageCount</td>
+                            </tr>
+                            <tr>
+                                <th>Barkodu:</th>
+                                <td>@Model.Barcode</td>
+                            </tr>
+                            <tr>
+                                <th>Özet:</th>
+                                <td>@Html.Raw(Model.Brief)</td>
+                            </tr>
+                            <tr>
+                                <th>Türü:</th>
+                                <td>@Model.Category?.Name</td>
+                            </tr>
+                            <tr>
+                                <th>Yazar:</th>
+                                <td>@Model.Author?.FullName</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+    </div>
+</div>
