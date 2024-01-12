@@ -18,7 +18,7 @@ namespace LibraryApp.Areas.Management.Controllers
 		{
 			_hostEnvironment = hostEnviroment;
 		}
-
+		
 		public IActionResult Index()
 		{
 			var model = db.Books.Where(c => c.Status == true).OrderBy(x => x.CreatedDate).Include("Author").Include("Category").ToList();
@@ -109,6 +109,38 @@ namespace LibraryApp.Areas.Management.Controllers
 			ViewBag.CategoryId = new SelectList(db.Categories.Where(c => c.Status == true), "Id", "Name", model.CategoryId);
 			ViewBag.AuthorId = new SelectList(db.Authors.Where(c => c.Status == true), "Id", "FullName", model.AuthorId);
 			return View(model);
+		}
+
+		[HttpPost, ActionName("Delete")]
+		public async Task<IActionResult> Delete(int id)
+		{
+			var book = await db.Books.FindAsync(id);
+
+			if (book == null)
+			{
+				return NotFound();
+			}
+
+			db.Books.Remove(book);
+			await db.SaveChangesAsync();
+
+			return RedirectToAction("/Management/Book/Index");
+		}
+
+		[HttpPost]
+		public async Task<JsonResult> DeleteByJs(int id)
+		{
+			var book = await db.Books.FindAsync(id);
+
+			if (book == null)
+			{
+				return Json("Böyle Bir Kitap Bulunamadı");
+			}
+
+			db.Books.Remove(book);
+			await db.SaveChangesAsync();
+
+			return Json("Silindi");
 		}
 	}
 }

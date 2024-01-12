@@ -39,8 +39,7 @@
 								<a class="btn btn-warning"
 								   href="/Management/Book/Edit/@item.Id">Düzenle</a>
 
-								<a class="btn btn-warning"
-								   href="/Management/Book/Delete/@item.Id">Sil</a>
+								<button class="btn btn-danger" onclick="deleteBook(@item.Id);">Sil</button>
 							</td>
 						</tr>
 						rowNumber++;
@@ -51,3 +50,20 @@
 		</div>
 	</div>
 </div>
+@section ScriptSection {
+	<script>
+		function deleteBook(id) {
+			$.ajax({
+				type: "POST",
+				url: "/Management/Book/DeleteByJs",
+				data: { id: id },
+				success: function (data) {
+					alert(data);
+				},
+				error: function (data) {
+					alert("Hata: " + data);
+				}
+			});
+		}
+	</script>
+}
