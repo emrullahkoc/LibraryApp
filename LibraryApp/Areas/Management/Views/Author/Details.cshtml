@@ -23,13 +23,11 @@
                         <tbody>
                             <tr>
                                 <th>Doğum Tarihi:</th>
-                                <td>
-                                    @Model.BirthDate <span class="badge badge-success">available</span>
-                                </td>
+                                <td>@Model.BirthDate.ToString("dd MMMM yyyy")</td>
                             </tr>
                             <tr>
                                 <th>Ölüm Tarihi:</th>
-                                <td>@Model.DeathDate</td>
+                                <td>@Model.DeathDate?.ToString("dd MMMM yyyy")</td>
                             </tr>
                             <tr>
                                 <th>Hakkında:</th>
@@ -42,4 +40,71 @@
             <!--end row-->
         </div>
     </div>
+</div>
+<h6 class="mb-0 text-uppercase">Kitapları</h6>
+<hr />
+<div class="row">
+    @{
+        int rowNumber = 1;
+    }
+    @foreach (var item in Model.Books)
+    {
+        if (rowNumber == 1)
+        {
+            <div class="col-12 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="@item.ImageUrl" height="320" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.Name</h5>
+                                <p class="card-text">@Html.Raw(@item.Brief)</p>
+                                <p class="card-text">
+                                    <a class="text-muted" href="/Management/Category/Details/@item.Category.Id">Türü: @item.Category.Name</a>
+                                    <br />
+                                    <small class="text-muted">Eklenme Tarihi <br />@item.CreatedDate</small>
+                                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <a href="/Management/Book/Edit/@item.Id" type="button" class="btn btn-warning">Düzenle</a>
+                                        <a href="/Management/Book/Details/@item.Id" type="button" class="btn btn-success">Detay</a>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            rowNumber = 0;
+        }
+        else
+        {
+            <div class="col-12 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.Name</h5>
+                                <p class="card-text">@Html.Raw(@item.Brief)</p>
+                                <p class="card-text">
+                                    <a class="text-muted" href="/Management/Category/Details/@item.Category.Id">Türü: @item.Category.Name</a>
+                                    <br />
+                                    <small class="text-muted">Eklenme Tarihi <br />@item.CreatedDate</small>
+                                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <a href="/Management/Book/Edit/@item.Id" type="button" class="btn btn-warning">Düzenle</a>
+                                        <a href="/Management/Book/Details/@item.Id" type="button" class="btn btn-success">Detay</a>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="@item.ImageUrl" height="320" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            rowNumber = 1;
+        }
+    }
 </div>

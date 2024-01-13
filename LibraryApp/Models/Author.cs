@@ -29,6 +29,11 @@ namespace LibraryApp.Models
         [Required]
         public bool Status { get; set; }
         public DateTime CreatedDate { get; set; }
-        public virtual ICollection<Book> Books { get; set; } 
+        public virtual ICollection<Book> Books { get; set; }
+
+        internal static object FirstOrDefault(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

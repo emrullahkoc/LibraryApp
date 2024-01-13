@@ -1,6 +1,7 @@
 ﻿using LibraryApp.Models;
 using LibraryApp.Utils;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryApp.Areas.Management.Controllers
 {
@@ -23,7 +24,7 @@ namespace LibraryApp.Areas.Management.Controllers
         }
         public IActionResult Details(int id)
         {
-            Category? model = db.Categories.Find(id);
+            Category? model = db.Categories.Include(a => a.Books).ThenInclude(b => b.Author).FirstOrDefault(a => a.Id == id);
             if (model == null)
             {
                 return Redirect("/Management/Category/Index");

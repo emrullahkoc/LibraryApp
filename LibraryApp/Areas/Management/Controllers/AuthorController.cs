@@ -1,6 +1,7 @@
 ﻿using LibraryApp.Models;
 using LibraryApp.Utils;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using System.Diagnostics;
 
@@ -24,7 +25,7 @@ namespace LibraryApp.Areas.Management.Controllers
         }
         public IActionResult Details(int id)
         {
-            Author? model = db.Authors.Find(id);
+            Author? model = db.Authors.Include(a => a.Books).ThenInclude(b => b.Category).FirstOrDefault(a => a.Id == id);
             if (model == null)
             {
                 return Redirect("/Management/Author/Index");
@@ -112,6 +113,7 @@ namespace LibraryApp.Areas.Management.Controllers
             db.SaveChanges();
             return Redirect("/Management/Author/Index");
         }
+
 
     }
 }
