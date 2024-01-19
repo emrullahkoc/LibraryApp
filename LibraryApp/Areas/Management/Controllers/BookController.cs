@@ -1,6 +1,7 @@
 ﻿using EK.Helper.Utils;
 using LibraryApp.Models;
 using LibraryApp.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace LibraryApp.Areas.Management.Controllers
 {
 	[Area("Management")]
+	[Authorize]
 
 	public class BookController : Controller
 	{

@@ -1,0 +1,59 @@
+﻿@model LibraryApp.Models.ViewModels.LoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bir Kitap Bir Yorum</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Kitap, Kütüphane, Yazar, Tolstoy" name="keywords">
+    <meta content="Kitap Kütüphanesi" name="description">
+    <!-- Favicon -->
+    <link href="~/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="~/style.css">
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Kullanıcı Girişi</h1>
+                <br />
+                <h3>Yapım Aşamasında</h3>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="post">
+                <h1>Admin Girişi</h1>
+                <br />
+                <input type="email" placeholder="Email" asp-for="Email">
+                <input type="password" placeholder="Şifre" asp-for="Password">
+                <a href="#">Şifremi Unuttum</a>
+                <button type="submit">Giriş Yap</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hoş Geldin Admin</h1>
+                    Bu kısından sadece kullanıcı girişleri yapılmaktadır. Eğer admin girişi yapmak istiyorsanız lütfen <b>Admin Giriş</b> butonuna basınız.</p>
+                    <button class="hidden" id="login">Admin Giriş</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hoş Geldin Kullanıcı</h1>
+                    <p>Bu kısından sadece admin girişleri yapılmaktadır. Eğer kullanıcı girişi yapmak istiyorsanız lütfen <b>Kullanıcı Giriş</b> butonuna basınız.</p>
+                    <button class="hidden" id="register">Kullanıcı Giriş</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/script.js"></script>
+</body>
+
+</html>

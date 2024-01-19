@@ -15,7 +15,6 @@ namespace LibraryApp.Models
         }
 
         public DbSet<MainPage> MainPages { get; set; }
-        public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<ContactMessage> ContactMessages { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -23,9 +22,11 @@ namespace LibraryApp.Models
         public DbSet<Book> Books { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
         public DbSet<User> Users { get; set; }
+		public DbSet<PanelUser> PanelUsers { get; set; }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder
+
+		protected override void OnConfiguring(DbContextOptionsBuilder
             optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

@@ -1,13 +1,16 @@
 ﻿using LibraryApp.Models;
 using LibraryApp.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibraryApp.Areas.Management.Controllers
 {
     [Area("Management")]
+	[Authorize]
 
-    public class CategoryController : Controller
+
+	public class CategoryController : Controller
     {
         LibraryDbContext db = new LibraryDbContext();
         private readonly IWebHostEnvironment _hostEnvironment;

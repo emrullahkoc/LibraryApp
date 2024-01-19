@@ -1,5 +1,6 @@
 ﻿using LibraryApp.Models;
 using LibraryApp.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
@@ -8,7 +9,9 @@ using System.Diagnostics;
 namespace LibraryApp.Areas.Management.Controllers
 {
     [Area("Management")]
-    public class AuthorController : Controller
+	[Authorize]
+
+	public class AuthorController : Controller
     {
         LibraryDbContext db = new LibraryDbContext();
         private readonly IWebHostEnvironment _hostEnvironment;

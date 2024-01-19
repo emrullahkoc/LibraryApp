@@ -1,12 +1,15 @@
 ﻿using EK.Helper.Utils;
 using LibraryApp.Models;
 using LibraryApp.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace LibraryApp.Areas.Management.Controllers
 {
 	[Area("Management")]
+	[Authorize]
+
 	public class MainPageController : Controller
 	{
 		LibraryDbContext db = new LibraryDbContext(); 

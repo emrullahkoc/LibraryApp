@@ -1,9 +1,18 @@
 using LibraryApp.Utils;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// + Cookie Auth
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+		.AddCookie(opt =>
+		{
+			opt.LoginPath = "/Account/Login/";
+		});
+// -
 
 var app = builder.Build();
 
@@ -21,6 +30,10 @@ app.UseStaticFiles();
 app.UseAreaStaticFiles();
 
 app.UseRouting();
+
+// + Cookie Auth
+app.UseAuthentication();
+// -
 
 app.UseAuthorization();
 
